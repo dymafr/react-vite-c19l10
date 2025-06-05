@@ -4,7 +4,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { AuthContext } from "../../context";
 import { useContext } from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate } from "react-router";
 
 function Signin() {
   const { signin, user } = useContext(AuthContext);

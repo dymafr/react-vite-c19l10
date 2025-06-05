@@ -10,8 +10,4 @@ require("./database");
 
 app.use(routes);
 
-app.use("*", (req, res) => {
-  res.status(404).json("mauvaise routes");
-});
-
 app.listen(3001);
